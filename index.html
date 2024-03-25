@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- for internet explorere -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--(the most important line) for mobile first -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+		<title>Royal Orkadia</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+		<link rel="stylesheet" href="css/swiper-bundle.css">
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/linear.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-ar.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>-->
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+        <script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/swiper-bundle.js"></script>
+		<script src="js/plug.js"></script>
+	</head>
+	<body>
+         <!-- Start preloader -->
+            <div class="pre-loader">
+              <div class="content">
+                <div class="lds-default">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+         <!-- End preloader -->
+         <div class="over_click"></div>
+         <header>
+             <div class="top_nav">
+                 <div class="container">
+                     <div class="top_bar">
+                         <div class="main_nav">
+                            <span href="#" class="lnr lnr-cross closebtn"></span>
+                            <div class="t_lang sm dropdown">
+                              <a href="index.html" class="dropdown-toggle tl_anc tl_ar fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img class="i_lang" src="images/ar.png" alt="language">العربية
+                               <span class="lnr lnr-chevron-down chev"></span>
+                              </a>
+                              <ul class="dropdown-menu sam_menu ulfix">
+                                <li>
+                                    <a href="index-en.html" class="fixanc tl_en">
+                                        <img class="i_lang" src="images/lang-en.png" alt="language">English
+                                    </a>
+                                </li>
+                              </ul>
+                            </div> 
+                            <ul class="nav_bar list-unstyled list-inline ulfix">
+                                <li><a class="fixanc" href="#">الرئيسية</a></li>
+                                <li><a class="fixanc" href="#">عطور رجالية</a></li>
+                                <li><a class="fixanc" href="#">عطور نسائية </a></li>
+                                <li><a class="fixanc" href="#">عطور للجنسين</a></li>
+                            </ul>
+                          </div>
+                          <div class="logo">
+                            <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                          </div>
+                          
+                          <div class="left_side">
+                              <ul class="list-unstyled list-inline ulfix h_recomend">
+                                 <li class="mob_navbtn">
+                                    <a id="navbtn" class="re_btn fixanc">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </li>
+                                  <li class="srch">
+                                      <a href="#" class="re_btn fixanc" data-toggle="modal" data-target=".over_mod">
+                                            <span class="lnr lnr-magnifier"></span>
+                                      </a>
+                                  </li>
+                                  <li class="my_account lg dropdown">
+                                    <a class="re_btn dropdown-toggle fixanc" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="lnr lnr-user"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu ulfix sam_menu">
+                                        <li>
+                                            <a href="#" class="fixanc" data-toggle="modal" data-target=".over_log">تسجيل الدخول</a>
+                                        </li>
+                                        <li><a href="#" class="fixanc">تسجيل جديد</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="cart">
+                                        <a class="re_btn fixanc" href="#">
+                                            <span class="lnr lnr-cart"></span>
+                                        </a>
+                                    </li>
+                              </ul>
+                              <div class="t_lang lg dropdown">
+                                  <a href="index.html" class="dropdown-toggle tl_anc tl_ar fixanc" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img class="i_lang" src="images/ar.png" alt="language">العربية
+                                   <span class="lnr lnr-chevron-down chev"></span>
+                                  </a>
+                                  <ul class="dropdown-menu sam_menu ulfix">
+                                    <li>
+                                        <a href="index-en.html" class="fixanc tl_en">
+                                            <img class="i_lang" src="images/lang-en.png" alt="language">English
+                                        </a>
+                                    </li>
+                                  </ul>
+                              </div> 
+                          </div>
+                     </div>
+                 </div>
+             </div>
+         </header>
+         
+         
+          <!--------------- start search modal ---------------->
+            <div class="modal fade over_mod" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="lnr lnr-cross"></span>
+                </button>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="searchbox">
+                            <input class="searchinput" id="search" placeholder="كلمة البحث" type="search">
+                            <span class="changed"></span>
+                            <button class="search_icon"type="submit"><span class="lnr lnr-magnifier"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------- end search modal ---------------->
+            
+            
+                              <!-- Start Main Slider -->
+      <section class="main_slider_sec">
+        <div class="main_slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="main-slide">
+                      <img src="images/slider.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="main-slide">
+                      <img src="images/slider.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="main-slide">
+                      <img src="images/slider.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-- end Main Slider -->
+        
+        
+        
+      <!-- start banners -->
+       <section class="our_bans">
+           <div class="container">
+               <div class="bans_slider sam_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="obans">
+                                   <a href="#" class="ban_anc fixanc">
+                                       <img src="images/ban1.jpg" class="img-responsive" />
+                                       <span class="ban_tit">عطور رجالية</span>
+                                   </a>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="obans">
+                                   <a href="#" class="ban_anc fixanc">
+                                       <img src="images/ban2.jpg" class="img-responsive" />
+                                       <span class="ban_tit">عطور نسائية</span>
+                                   </a>
+                               </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="obans">
+                                   <a href="#" class="ban_anc fixanc">
+                                       <img src="images/ban3.jpg" class="img-responsive" />
+                                       <span class="ban_tit">عطور للجنسين</span>
+                                   </a>
+                               </div>
+                            </div>
+                         </div>
+                         
+                   </div>
+                   <div class="swiper-pagination"></div>
+               </div>
+           </div>
+       </section>
+       <!-- end banners -->
+        
+        
+        <!-- start products -->
+        <section class="products_tabs">
+            <div class="container">
+                <div class="hprds_heading">
+                    <ul class="list-unstyled d-flex nav nav-tabs">
+                        <li class="active">
+                            <a href="#category1" role="tab" data-toggle="tab" aria-expanded="false">وصل حديثا</a>
+                        </li>
+                        <li>
+                            <a href="#category2" role="tab" data-toggle="tab" aria-expanded="false">الأكثر مبيعا</a>
+                        </li>
+                        <li>
+                            <a href="#category3" role="tab" data-toggle="tab" aria-expanded="false">المنتجات المميزة</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="new_arrivals tab-pane fade in active" id="category1">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p1.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <span class="pr_lab pr_discount">خصم 20%</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p2.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_new">جديد</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p3.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_discount">خصم 20%</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p4.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p5.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_finito">جديد</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p6.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <div class="over_finsh">
+                                                <span> نفذت الكمية</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="best_seller tab-pane fade" id="category2">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p1.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <span class="pr_lab pr_discount">خصم 20%</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p2.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_new">جديد</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p3.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_discount">خصم 20%</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p4.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p5.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_finito">جديد</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p6.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <div class="over_finsh">
+                                                <span> نفذت الكمية</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="best_seller tab-pane fade" id="category3">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p1.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <span class="pr_lab pr_discount">خصم 20%</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p2.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_new">جديد</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p3.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_discount">خصم 20%</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p4.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p5.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <button class="add_cart pr_btn">
+                                                <span class="lnr lnr-cart"></span>
+                                            </button>
+
+
+                                            <button class="add_fav pr_btn">
+                                                <span class="lnr lnr-heart"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6">
+                                <div class="prod_cont">
+                                   <span class="pr_lab pr_finito">جديد</span>
+                                    <div class="pr_img">
+                                        <a href="#">
+                                            <img src="images/p6.jpg" alt="product" class="img-responsive" />
+                                        </a>
+                                        <div class="pr_over list-unstyled list-inline ulfix">
+                                            <div class="over_finsh">
+                                                <span> نفذت الكمية</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled ulfix pr_desc">
+                                        <li class="pr_name">
+                                            <a href="#" class="fixanc">عطر دام عزك </a>
+                                        </li>
+                                        <li class="pr_price">
+                                            <span class="prev">300ر.س</span>
+                                            <span class="cur">250 ر.س</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- end products -->
+         
+        <!-- start Customer reviews-->
+        
+        <section class="cust_reviews">
+            <div class="container">
+               <h3 class="rev_title hhfix">آراء العملاء</h3>
+               <div class="reviews_slider sam_slider">
+                     <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rev_cont">
+                                    <div class="cust_img">
+                                        <a href="#">
+                                            <img src="images/opinion.png" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <ul class="list-unstyled ulfix curev_cont">
+                                        <li>
+                                            <a href="#" class="cu_name fixanc">محمد عبد الرحمن</a>
+                                            <div class="cu_rate">
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                            </div>
+                                        </li>
+                                        <li class="cu_commt">
+                                            يعطيكم العافية جودة عالية وأسعار منجد حلوه..
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rev_cont">
+                                    <div class="cust_img">
+                                        <a href="#">
+                                            <img src="images/opinion.png" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <ul class="list-unstyled ulfix curev_cont">
+                                        <li>
+                                            <a href="#" class="cu_name fixanc">محمد عبد الرحمن</a>
+                                            <div class="cu_rate">
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span class="active"><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                            </div>
+                                        </li>
+                                        <li class="cu_commt">
+                                            يعطيكم العافية جودة عالية وأسعار منجد حلوه..
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                         </div>
+                   </div>
+                   <div class="swiper-pagination"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- end Customer reviews-->
+        
+        
+        
+        
+        <!-- start features -->
+        <section class="our_feats">
+            <div class="container">
+                <div class="feats_row">
+                    <ul class="feat_cont list-unstyled ulfix">
+                        <li class="fe_icon"><span class="lnr lnr-star"></span></li>
+                        <li class="mafe_tit">منتجات مميزة</li>
+                        <li class="sbfe_tit">زيوت عطرية فاخرة 100%</li>
+                    </ul>
+                    <ul class="feat_cont list-unstyled ulfix">
+                        <li class="fe_icon"><span class="lnr lnr-checkmark-circle"></span></li>
+                        <li class="mafe_tit">وسائل الدفع</li>
+                        <li class="sbfe_tit">وسائل دفع امنه 100%</li>
+                    </ul>
+                    <ul class="feat_cont list-unstyled ulfix">
+                        <li class="fe_icon"><span class="lnr lnr-phone-handset"></span></li>
+                        <li class="mafe_tit">خدمة عملاء</li>
+                        <li class="sbfe_tit">خدمة عملاء مميزه 24/7</li>
+                    </ul>
+                    <ul class="feat_cont list-unstyled ulfix">
+                        <li class="fe_icon"><span class="lnr lnr-rocket"></span></li>
+                        <li class="mafe_tit">شحن مجاني</li>
+                        <li class="sbfe_tit">شحن لأي مكان داخل المملكة</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end features -->
+        
+        
+        
+        <!-- start footer -->
+        
+        <footer>
+           <!-- start newsletter -->
+            <div class="container">
+                <div class="our_newsletter">
+                    <div class="newsl_cont">
+                        <h3 class="hhfix newsl_title">اشترك في النشرة البريدية ليصلك جديد عروضنا</h3>
+                        <div class="form-group mail_cont">
+                            <input type="email" class="form-control ffmail_input" id="exampleInputEmail1" placeholder=" ادخل بريدك الالكتروني ">
+                            <button class="fm_check"><span class="lnr lnr-arrow-left"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end newsletter -->
+                <div class="foot_cont">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="foo_desc">
+                                <div class="logo">
+                                    <a href="#"><img class="img-responsive" src="images/logo.png" alt="logo"></a>
+                                </div>
+                                <ul class="foo_social list-unstyled list-inline ulfix">
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id10" aria-expanded="false">معلومات</h5>
+                                <ul class="list-unstyled collapse ulfix fast_ul" id="id10">
+                                    <li><a class="fixanc" href="#">من نحن </a></li>
+                                    <li><a class="fixanc" href="#">الشحن والتوصيل</a></li>
+                                    <li><a class="fixanc" href="#">الحسابات البنكية</a></li>
+                                    <li><a class="fixanc" href="#">الخصوصية</a></li>
+                                    <li><a class="fixanc" href="#">شروط الإستخدام</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id12" aria-expanded="false">خدمة العملاء</h5>
+                                <ul class="list-unstyled collapse ulfix fast_ul" id="id12">
+                                    <li><a class="fixanc" href="#">اتصل بنا</a></li>
+                                    <li><a class="fixanc" href="#">ارجاع الطلب</a></li>
+                                    <li><a class="fixanc" href="#">خريطة الموقع</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id9" aria-expanded="false">حسابي</h5>
+                                <ul class="list-unstyled collapse ulfix" id="id9">
+                                    <li><a class="fixanc" href="#">حسابي</a></li>
+                                    <li><a class="fixanc" href="#">طلباتي</a></li>
+                                    <li><a class="fixanc" href="#">قائمة رغباتي</a></li>
+                                    <li><a class="fixanc" href="#">القائمة البريدية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="fast_links">
+                                <h5 class="ff_title fsm_title hhfix" data-toggle="collapse" data-target="#id11" aria-expanded="false">اضافات</h5>
+                                <ul class="list-unstyled collapse ulfix" id="id11">
+                                    <li><a class="fixanc" href="#">الشركات</a></li>
+                                    <li><a class="fixanc" href="#">قسائم الهدايا</a></li>
+                                    <li><a class="fixanc" href="#">نظام العمولة</a></li>
+                                    <li><a class="fixanc" href="#">العروض المميزة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fopayco">
+                    <div class="ff_rghts">
+                             ©    متجر رويال اوركيديا  - صنع بحب    <i class="fas fa-heart"></i>   في
+                             
+                             <a href="#"><img src="images/tasawk-c-ar2.png"></a>
+                    </div>
+                    <div class="ff_pay">
+                        <img src="images/pay.png" class="img-responsive">
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        
+        
+        <!-- end footer -->
+       
+   </body>
+</html> 

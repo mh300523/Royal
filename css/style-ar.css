@@ -1,0 +1,165 @@
+header .nav_bar > li:not(:last-child)
+{
+    margin-left: 19px;
+}
+.h_recomend > li
+{
+    margin-left: 12px;
+}
+.top_bar .t_lang .i_lang
+{
+    margin-left: 5px;
+}
+.top_bar .t_lang .tl_anc > span
+{
+    margin-right: 2px;
+}
+.changed
+{
+    right: 0;
+    background: -webkit-linear-gradient(to left, rgb(198,150,43) 0%, rgb(182,127,17) 12%, rgb(252,234,146) 100%);
+    background: -o-linear-gradient(to left, rgb(198,150,43) 0%, rgb(182,127,17) 12%, rgb(252,234,146) 100%);
+    background: linear-gradient(to left, rgb(198,150,43) 0%, rgb(182,127,17) 12%, rgb(252,234,146) 100%);
+}
+.search_icon
+{
+    left: 28px;
+}
+.main_slider .swiper-button-next:after,.reviews_slider .swiper-button-prev:after
+{
+    content: '\e875';
+}
+.main_slider .swiper-button-prev:after,.reviews_slider .swiper-button-next:after
+{
+    content: '\e876';
+}
+.main_slider .swiper-button-prev
+{
+    right: 30px;
+}
+.main_slider .swiper-button-next
+{
+    left: 30px;
+}
+.reviews_slider .swiper-button-prev
+{
+    left: -84px;
+}
+.reviews_slider .swiper-button-next
+{
+    right: -84px;
+}
+.hprds_heading .nav-tabs > li
+{
+    margin-right: 25px;
+}
+.prod_cont .pr_lab
+{
+    left: 14px;
+}
+.rev_cont .cust_img
+{
+    margin-left: 15px;
+}
+.cust_reviews .rev_cont:after
+{
+    left: 10px;
+}
+.feat_cont:not(:last-child)
+{
+    border-left: 1px solid #bdbdbd;
+}
+.mail_cont .fm_check
+{
+    left: 0;
+}
+.foo_desc
+{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foo_social > li:not(:last-child)
+{
+    margin-left: 30px;
+}
+.cust_reviews .rev_cont:after
+{
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1199px)	
+{
+    .reviews_slider .swiper-button-prev
+    {
+        left: -24px;
+    }
+    .reviews_slider .swiper-button-next
+    {
+        right: -24px;
+    }
+}
+
+@media (max-width:991px)	
+{
+    footer .fast_links .fsm_title:before
+    {
+        left: 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px)	
+{
+
+}
+
+
+
+
+
+@media (max-width:767px)	
+{
+    .main_nav
+    {
+        right: 0;
+    }
+    .closebtn
+    {
+        left: 20px;
+    }
+    header .nav_bar > li:not(:last-child)
+    {
+        margin-left: 0;
+    }
+    .h_recomend > li
+    {
+        margin-left: 0;
+    }
+    .top_bar .t_lang.sm
+    {
+        right: 20px;
+    }
+    .prod_cont .pr_lab
+    {
+        left: 5px;
+    }
+    .feat_cont:not(:last-child)
+    {
+        border-left: 0;
+    }
+    .hprds_heading .nav-tabs > li
+    {
+        margin-right: 0;
+    }
+    .cust_reviews .rev_cont:after
+    {
+        left: 5px;
+    }
+}
